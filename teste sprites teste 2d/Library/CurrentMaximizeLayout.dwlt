@@ -22,7 +22,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 571}
   m_MaxSize: {x: 18008, y: 18021}
   vertical: 1
-  controlID: 18260
+  controlID: 20324
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 571}
   m_MaxSize: {x: 18008, y: 18021}
   vertical: 0
-  controlID: 18261
+  controlID: 20325
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 571}
   m_MaxSize: {x: 14006, y: 18021}
   vertical: 1
-  controlID: 18226
+  controlID: 20290
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 471}
   m_MaxSize: {x: 14006, y: 14021}
   vertical: 0
-  controlID: 18227
+  controlID: 20291
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 471}
   m_MaxSize: {x: 10002, y: 14021}
   vertical: 1
-  controlID: 18204
+  controlID: 20268
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,8 +213,8 @@ MonoBehaviour:
     y: 0
     width: 262
     height: 221
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -247,10 +247,10 @@ MonoBehaviour:
     width: 260
     height: 200
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 25}
     m_SelectedIDs: a6280000
     m_LastClickedID: 10406
-    m_ExpandedIDs: 82f2f9ff94c2fbff1afcffff000000008c280000
+    m_ExpandedIDs: 82f2f9ff94c2fbff7e84fcff1afcffff000000008c280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -336,18 +336,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Animation/2D Walk
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Animation/2D Walk
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\LuizFelipe\Documents\teste sprites teste 2d
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 80280000
-    m_LastClickedID: 10368
+    m_SelectedIDs: d4270000
+    m_LastClickedID: 10196
     m_ExpandedIDs: 00000000f0250000c22700005228000066280000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: a6280000
     m_LastClickedInstanceID: 10406
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 002500005ad7ffff3c2600002a2900008898ffffdc2a0000442d00009c39ffff94290000000000001a260000644400001c320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -485,14 +485,14 @@ MonoBehaviour:
     width: 823
     height: 471
   m_SceneLighting: 1
-  lastFramingTime: 6505.094445978753
+  lastFramingTime: 13133.221181173038
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 31.632507, y: 7.596037, z: 0}
+    m_Target: {x: -1.6134293, y: -6.5490294, z: 0}
     speed: 2
-    m_Value: {x: 31.632507, y: 7.596037, z: 0}
+    m_Value: {x: -1.6134293, y: -6.5490294, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -519,9 +519,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 38.855095
+    m_Target: 13.087054
     speed: 2
-    m_Value: 38.855095
+    m_Value: 13.087054
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -678,8 +678,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
