@@ -7,6 +7,16 @@ TagManager:
   - Ground
   - Plank
   - Column
+  - Pneu
+  - GameMaster
+  - Instrucao
+  - Instrucao1
+  - Instrucao2
+  - Objetivo
+  - Trigger
+  - Trigger1
+  - Trigger2
+  - Truck
   layers:
   - Default
   - TransparentFX

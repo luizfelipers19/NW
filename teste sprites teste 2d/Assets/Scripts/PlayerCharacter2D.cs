@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCharacter2D : MonoBehaviour
 {
-
+   
     public int speed;
     private SpriteRenderer myRenderer;
     public Animator anim;
@@ -12,12 +13,16 @@ public class PlayerCharacter2D : MonoBehaviour
     public Rigidbody2D rig;
     bool isGrounded;
     float shootTimer = .2f;
+    private gameMaster gm;
+
 
     // Use this for initialization
     void Start()
     {
         myRenderer = GetComponent<SpriteRenderer>();//Associa o Sprite Renderer do objeto á variavel myRenderer, no comeco do jogo	
         isGrounded = true;
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
+        
 
     }
     // Update is called once per frame
@@ -85,7 +90,46 @@ public class PlayerCharacter2D : MonoBehaviour
                 isGrounded = true;
             anim.SetBool("isGrounded", true);
             }
-        } }
+        }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Pneu"))
+        {
+            Destroy(col.gameObject);
+            gm.pneuPoints += 1;
+            gm.goalText.text = "Volte para o Jeep";
+        }
+
+        if (col.CompareTag("Truck"))
+        {
+            if (gm.pneuPoints == 1)
+            {
+                gm.goalText.text = "Missao cumprida";
+            }
+            
+            
+            
+        }
+
+        if (col.CompareTag("Trigger1"))
+        {
+            gm.instText.text = "Use 'A' ou 'D' para movimentar seus personagens.";
+            gm.goalText.text = "Encontre o pneu perdido";
+        }
+
+
+        if (col.CompareTag("Trigger2"))
+        {
+            gm.instText.text = "Aperte 'Barra de Espaco' para pular";
+        }
+
+
+
+    }
+
+
+
+}
 
     
 
