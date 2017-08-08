@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCharacter2D : MonoBehaviour
 {
-
+    
     public int speed;
     private SpriteRenderer myRenderer;
     public Animator anim;
@@ -18,7 +18,7 @@ public class PlayerCharacter2D : MonoBehaviour
     {
         myRenderer = GetComponent<SpriteRenderer>();//Associa o Sprite Renderer do objeto á variavel myRenderer, no comeco do jogo	
         isGrounded = true;
-
+        
     }
     // Update is called once per frame
     void Update()
