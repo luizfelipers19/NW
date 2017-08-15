@@ -17,6 +17,11 @@ TagManager:
   - Trigger1
   - Trigger2
   - Truck
+  - Sea
+  - status
+  - Trigger3
+  - Trigger4
+  - Pneu2
   layers:
   - Default
   - TransparentFX

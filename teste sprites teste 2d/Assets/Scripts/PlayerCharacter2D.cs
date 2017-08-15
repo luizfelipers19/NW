@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerCharacter2D : MonoBehaviour
 {
-   
+    
     public int speed;
     private SpriteRenderer myRenderer;
     public Animator anim;
@@ -14,6 +14,8 @@ public class PlayerCharacter2D : MonoBehaviour
     bool isGrounded;
     float shootTimer = .2f;
     private gameMaster gm;
+    public AudioClip[] audioclip;
+    public bool isDead;
 
 
     // Use this for initialization
@@ -22,7 +24,7 @@ public class PlayerCharacter2D : MonoBehaviour
         myRenderer = GetComponent<SpriteRenderer>();//Associa o Sprite Renderer do objeto á variavel myRenderer, no comeco do jogo	
         isGrounded = true;
         gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
-        
+        isDead = false; 
 
     }
     // Update is called once per frame
@@ -38,7 +40,7 @@ public class PlayerCharacter2D : MonoBehaviour
             anim.SetBool("isGrounded", false);
         }
         if (rig.velocity.y < 0) {
-            rig.velocity += Vector2.up * Physics2D.gravity.y * 2 * Time.deltaTime;
+            rig.velocity += Vector2.up * Physics2D.gravity.y * 3 * Time.deltaTime;
         }
     }
 
@@ -93,42 +95,92 @@ public class PlayerCharacter2D : MonoBehaviour
         }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Pneu"))
+        if (col.CompareTag("Pneu") || col.CompareTag("Pneu2"))
         {
             Destroy(col.gameObject);
             gm.pneuPoints += 1;
-            gm.goalText.text = "Volte para o Jeep";
-        }
 
-        if (col.CompareTag("Truck"))
-        {
             if (gm.pneuPoints == 1)
             {
-                gm.goalText.text = "Missao cumprida";
+                gm.goalText.text = "Ache o segundo Pneu";
+                gm.instText.text = "Muito bem, agora ache um caminho que leve ao segundo pneu";
+            }
+
+            if (gm.pneuPoints == 2)
+            {
+                gm.goalText.text = "Volte para o Jeep";
+                gm.instText.text = "Agora acha um caminho de volta";
+            }
+        }
+
+      else if (col.CompareTag("Truck"))
+        {   
+            if (gm.pneuPoints == 1)
+            {
+                gm.goalText.text = "Ache o segundo pneu antes de voltar para o Jeep";
+                gm.instText.text = "Ainda falta buscar uma roda. Vá atrás dela!";
+            }
+            else if (gm.pneuPoints == 2)
+            {
+                gm.statusText.text = "Missao cumprida";
+                gm.goalText.text = "Boa mlk";
+                gm.instText.text = "Você joga bem demais!";
             }
             
             
             
         }
 
-        if (col.CompareTag("Trigger1"))
+        else if (col.CompareTag("Trigger1"))
         {
             gm.instText.text = "Use 'A' ou 'D' para movimentar seus personagens.";
             gm.goalText.text = "Encontre o pneu perdido";
         }
 
 
-        if (col.CompareTag("Trigger2"))
+        else if (col.CompareTag("Trigger2"))
         {
-            gm.instText.text = "Aperte 'Barra de Espaco' para pular";
+            if (gm.pneuPoints == 1)
+            {
+                gm.instText.text = "Você deveria olhar mais para cima!";
+            }
+            else if (gm.pneuPoints == 2)
+            {
+                gm.instText.text = "Quase lá";
+            }
+
+            else
+            {
+                gm.instText.text = "Aperte 'Barra de Espaco' para pular";
+            }
         }
 
+        else if (col.CompareTag("Trigger3"))
+        {
+            gm.instText.text = "Só vai mano, confia! Pula pra lá!";
+        }
+
+        else if (col.CompareTag("Trigger4"))
+        {
+            gm.instText.text = "Boa carai, tamo chegando!";
+        }
+
+        else if (col.CompareTag("Sea"))
+        {
+            gm.statusText.text = "Rest in Peace";
+            isDead = true;
+        }
+
+        if (isDead == true)
+        {
+            
+        }
 
 
     }
 
-
-
+   
+        
 }
 
     
