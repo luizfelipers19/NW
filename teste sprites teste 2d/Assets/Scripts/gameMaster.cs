@@ -11,6 +11,7 @@ public class gameMaster : MonoBehaviour {
     public Text instText;
     public Text goalText;
     public Text statusText;
+    public bool missionComplete = false;
 
     private void Update()
     {

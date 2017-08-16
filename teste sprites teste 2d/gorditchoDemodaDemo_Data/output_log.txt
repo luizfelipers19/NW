@@ -1,0 +1,45 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     912 MB
+    Driver:   9.18.13.2762
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\LuizFelipe\Desktop\GameArt\1st try\gorditchoDemodaDemo_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.406 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+The referenced script on this Behaviour (Game Object 'Numero pontos') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Pneu2') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'TruckWheelSprite') is missing!
+ 
+(Filename:  Line: 1758)
+
+UnloadTime: 1.491433 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 16b4 -> priority: 1 
+  Thread -> id: 38dc -> priority: 1 
+  Thread -> id: 36f0 -> priority: 1 
+  Thread -> id: 2dec -> priority: 1 

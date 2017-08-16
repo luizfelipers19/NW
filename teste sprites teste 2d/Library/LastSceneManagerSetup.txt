@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/gordinho.unity
+- path: Assets/Scenes/gordinho.unity
   isLoaded: 1
   isActive: 1
