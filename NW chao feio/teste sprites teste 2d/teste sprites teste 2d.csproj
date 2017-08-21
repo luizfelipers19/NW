@@ -84,11 +84,13 @@
     <Compile Include="Assets\Scripts\DialogHolder.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\gameMaster.cs" />
+    <Compile Include="Assets\Scripts\MisCompleteMenuScript.cs" />
     <Compile Include="Assets\Scripts\MusicGenerator.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerCharacter2D.cs" />
     <Compile Include="Assets\Scripts\PneuScript.cs" />
     <Compile Include="Assets\Scripts\Respawn.cs" />
+    <Compile Include="Assets\Scripts\TriggerScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

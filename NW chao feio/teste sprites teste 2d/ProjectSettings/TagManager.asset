@@ -25,6 +25,11 @@ TagManager:
   - TriggerTruck1
   - Dialog
   - NPC
+  - TriggerEnd
+  - Trigger5
+  - Neguinho
+  - Trigger6
+  - PointsText
   layers:
   - Default
   - TransparentFX

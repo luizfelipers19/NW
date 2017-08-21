@@ -16,6 +16,7 @@ public class PlayerCharacter2D : MonoBehaviour
     float shootTimer = .2f;
     private gameMaster gm;
     public AudioClip[] audioclip;
+    public
     
     
 
@@ -41,7 +42,7 @@ public class PlayerCharacter2D : MonoBehaviour
             anim.SetBool("isGrounded", false);
         }
         if (rig.velocity.y < 0) {
-            rig.velocity += Vector2.up * Physics2D.gravity.y * 3 * Time.deltaTime;
+            rig.velocity += Vector2.up * Physics2D.gravity.y * 7 * Time.deltaTime;
         }
     }
 
@@ -94,12 +95,20 @@ public class PlayerCharacter2D : MonoBehaviour
             anim.SetBool("isGrounded", true);
         }
     }
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Pneu") || col.CompareTag("Pneu2"))
+
+   
+
+
+
+        
+    
+  private void OnTriggerEnter2D(Collider2D col)
+    {/*
+          if (col.CompareTag("Pneu") || col.CompareTag("Pneu2"))
         {
             Destroy(col.gameObject);
             gm.pneuPoints += 1;
+            return;
 
             if (gm.pneuPoints == 1)
             {
@@ -115,7 +124,9 @@ public class PlayerCharacter2D : MonoBehaviour
         }
 
         else if (col.CompareTag("Truck"))
-        {
+        {   
+            
+
             if (gm.pneuPoints == 1)//Quando pegou apenas um dos pneus e ja voltou par ao caminhão
             {
                 gm.goalText.text = "Ache o segundo pneu antes de voltar para o Jeep";
@@ -133,10 +144,26 @@ public class PlayerCharacter2D : MonoBehaviour
 
         }
 
+        
+        else if (col.CompareTag("TriggerEnd"))
+        {
+            gm.instText.text = "";
+            gm.goalText.text = "Procure pelos pneus ";
+            gm.pointsText.text = ("Pneus: " + gm.pneuPoints);
+
+        }
+       
+
         else if (col.CompareTag("Trigger1"))
         {
-            gm.instText.text = "Use 'A' ou 'D' para movimentar seus personagens.";
-            gm.goalText.text = "Encontre o pneu perdido";
+            gm.instText.text = "Aperte 'P' para interagir com objetos destacados";
+         
+        }
+
+        else if (col.CompareTag("Trigger4"))
+        {
+            
+            gm.instText.text = "";
         }
 
 
@@ -165,15 +192,15 @@ public class PlayerCharacter2D : MonoBehaviour
         else if (col.CompareTag("Trigger4"))
         {
             gm.instText.text = "Boa carai, tamo chegando!";
-        }
+        } */
 
-        else if (col.CompareTag("Sea"))
+         if (col.CompareTag("Sea"))
         {
            
             Die();
         }
 
-    }
+    } 
          void Die()
         {
         gm.isDead = true; //toggla a variavel como true para que a DeadUI seja acionada
