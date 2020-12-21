@@ -1,5 +1,5 @@
 # NW
-Nw repository
+Ninja Warrior repository
 
 One of my first Unity Projects.
 
@@ -8,4 +8,4 @@ It already has health system, damages and enemies.
 
 Never finished, because the idea was shitty.
 
-#LongLiveTheJão
+#LongLiveTheJãozinho
